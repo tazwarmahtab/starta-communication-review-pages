@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Staging review only. Remove disallow and noindex only after client approval.
