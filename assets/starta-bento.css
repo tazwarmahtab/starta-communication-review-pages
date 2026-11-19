@@ -1,0 +1,37 @@
+/* Starta V4 supporting services — intentionally light and editorial. */
+#solutions .starta-bento{margin:0 0 clamp(26px,4vw,50px);border:1px solid rgba(30,72,52,.16);border-radius:clamp(16px,2vw,28px);background:#f7f8f3;padding:clamp(18px,3vw,36px);color:#14372a}
+#solutions .starta-bento-tabs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:clamp(18px,3vw,30px)}
+#solutions .starta-bento-kicker{font-size:10px;letter-spacing:.16em;font-weight:750;color:#527666}
+#solutions .starta-bento-tabs .starta-bento-kicker{margin-right:auto;padding-right:16px}
+#solutions .starta-bento-tabs button{border:1px solid #cbd7cc;background:#fff;color:#285442;padding:10px 19px;min-height:44px;border-radius:999px;font:600 13px/1.3 var(--font,system-ui,sans-serif);transition:background .2s ease,color .2s ease,transform .2s ease}
+#solutions .starta-bento-tabs button[aria-pressed="true"]{background:#174332;color:#fff;border-color:#174332}
+#solutions .starta-bento-tabs button:hover{transform:translateY(-2px)}
+#solutions .starta-bento-tabs button:focus-visible{outline:3px solid #79b98a;outline-offset:4px}
+#solutions .starta-bento-detail{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,3vw,48px);align-items:center}
+#solutions .starta-bento-visual{min-height:230px;padding:20px;background:linear-gradient(132deg,#e3eade 0%,#eff2e7 55%,#dce8db 100%);border:1px solid #d1dfcf;border-radius:19px;display:flex;flex-direction:column;gap:22px}
+#solutions .starta-bento-visual-label{font-size:10px;letter-spacing:.13em;font-weight:700;color:#527666}
+#solutions .starta-bento-steps{display:flex;align-items:stretch;gap:9px;flex-wrap:wrap;flex:1}
+#solutions .starta-bento-step{flex:1 1 96px;min-width:0;border:1px solid rgba(49,96,62,.17);border-radius:12px;background:#fffefa;padding:16px 12px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;box-shadow:0 8px 20px rgba(25,75,46,.035)}
+#solutions .starta-bento-step span{color:#538366;font-size:10px;font-weight:750}
+#solutions .starta-bento-step strong{font-size:clamp(12px,1.3vw,15px);font-weight:650;line-height:1.25}
+#solutions .starta-bento-info h3{font-size:clamp(27px,3.4vw,52px);letter-spacing:-.055em;line-height:1.1;margin:10px 0 15px;color:#14372a}
+#solutions .starta-bento-info p{font-size:clamp(14px,1.25vw,17px);line-height:1.65;max-width:44ch;margin:0 0 18px;color:#4c6759}
+#solutions .starta-bento-link{display:inline-flex;gap:7px;color:#174332;text-decoration:underline;text-underline-offset:5px;font-weight:700;margin:5px 0 17px}
+#solutions .starta-bento-info small{display:block;font-size:11px;line-height:1.4;color:#62786a}
+#solutions .service-grid{grid-template-columns:minmax(0,1.18fr) repeat(2,minmax(0,.91fr));}
+#solutions .service-grid[data-selected-service="voice"]{grid-template-columns:minmax(0,.91fr) minmax(0,1.18fr) minmax(0,.91fr)}
+#solutions .service-grid[data-selected-service="cpaas"]{grid-template-columns:repeat(2,minmax(0,.91fr)) minmax(0,1.18fr)}
+#solutions .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:760px){
+ #solutions .starta-bento{padding:18px;margin-bottom:22px}
+ #solutions .starta-bento-tabs .starta-bento-kicker{flex-basis:100%;margin:0 0 5px}
+ #solutions .starta-bento-tabs button{flex:1 1 auto;padding:9px}
+ #solutions .starta-bento-detail{grid-template-columns:minmax(0,1fr)}
+ #solutions .starta-bento-visual{min-height:185px}
+ #solutions .starta-bento-step{flex:1 1 90px;padding:12px 10px}
+ #solutions .service-grid,#solutions .service-grid[data-selected-service="voice"],#solutions .service-grid[data-selected-service="cpaas"]{grid-template-columns:minmax(0,1fr)}
+}
+@media(prefers-reduced-motion:reduce){#solutions .starta-bento-tabs button{transition:none}#solutions .starta-bento-tabs button:hover{transform:none}}
+
+/* The original three links are a resilient no-JS fallback; the enhanced panel replaces their duplicated presentation. */
+#solutions .service-grid.starta-bento-fallback-hidden{display:none}
