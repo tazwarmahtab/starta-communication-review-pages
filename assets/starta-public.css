@@ -66,3 +66,16 @@ button,input,textarea{font:inherit}.skip-link{position:absolute;top:-100px;left:
  .starta-brand-name{font-size:25px}
  .starta-brand-descriptor{font-size:6.5px;letter-spacing:.08em}
 }
+
+/* Guided enquiry is a progressive enhancement: existing direct contact remains available without JS. */
+.starta-enquiry-section{padding-block:clamp(48px,7vw,100px)}
+.starta-enquiry-fields{display:grid;gap:10px;min-width:0;max-width:620px}
+.starta-enquiry-fields label{font-size:13px;font-weight:700;color:#213e34;margin-top:8px}
+.starta-enquiry-fields input,.starta-enquiry-fields select,.starta-enquiry-fields textarea{width:100%;min-width:0;border:1px solid #b6c6b9;background:#fffefa;border-radius:10px;padding:13px 15px;color:#162b27;line-height:1.5}
+.starta-enquiry-fields textarea{resize:vertical}
+.starta-enquiry-fields input:focus-visible,.starta-enquiry-fields select:focus-visible,.starta-enquiry-fields textarea:focus-visible{outline:3px solid #77af98;outline-offset:3px}
+.starta-enquiry-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:6px}
+.starta-enquiry-actions button{font:inherit;min-height:46px;border:1px solid #b8c9bd;border-radius:100px;padding:10px 18px;background:#fffefa;color:#174433;cursor:pointer}
+.starta-enquiry-actions .btn-main{background:#174433;color:#fff;border-color:#174433}
+.starta-enquiry-actions button:focus-visible{outline:3px solid #77af98;outline-offset:3px}
+@media(max-width:640px){.starta-enquiry-actions{display:grid;grid-template-columns:1fr}.starta-enquiry-actions button{width:100%}}
